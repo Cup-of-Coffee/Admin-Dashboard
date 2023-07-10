@@ -5,32 +5,22 @@ body {
 
 .container {
     display: grid;
-    grid-template-areas: 'side top'
-    'side bottom';
+    grid-template-areas: 'left top top top top'
+    'left bottom bottom bottom bottom';
     gap: 10px;
 }
 
 .sidebar {
-    grid-area: side;
+    grid-area: left;
     background-color: pink;
 }
 
-.top {
+.header {
     grid-area: top;
     background-color: pink;
 }
 
-.bottom {
+.content {
     grid-area: bottom;
     background-color: pink;
-}
-
-.content {
-
-}
-
-.page {
-    display: grid;
-    grid-template-areas: 'side top'
-    'side bottom';
 }
