@@ -1,2 +1,32 @@
 
+body {
+    margin: auto;
+}
 
+.container {
+    display: grid;
+    grid-template-areas: 'side top'
+    'side bottom';
+    gap: 10px;
+    width: auto;
+    height: auto;
+}
+
+.nav {
+    grid-area: side;
+    background-color: pink;
+}
+
+.content {
+
+}
+
+.top {
+    grid-area: top;
+    background-color: pink;
+}
+
+.bottom {
+    grid-area: bottom;
+    background-color: pink;
+}
