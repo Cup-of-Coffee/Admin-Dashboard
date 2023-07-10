@@ -3,6 +3,19 @@ body {
     margin: auto;
 }
 
+/*
+===ELEMENTS CLASSES===
+*/
+
+
+
+
+
+
+/* 
+===GRID ELEMENTS===
+*/
+
 .container {
     display: grid;
     grid-template-areas: 'sidebar header header header header'
@@ -10,11 +23,17 @@ body {
     gap: 10px;
 }
 
+/*
+Sidebar Grid.
+*/
 .sidebar {
     grid-area: sidebar;
     background-color: pink;
 }
 
+/*
+Header Grid.
+*/
 .header {
     grid-area: header;
     background-color: lightblue;
@@ -32,19 +51,22 @@ body {
     grid-area: bottom;
 }
 
+/*
+Main Content grid.
+*/
 .content {
     grid-area: content;
     background-color: greenyellow;
 
     display: grid;
-    grid-template-areas: 'left right'
-    'left right';
+    grid-template-areas: 'left left left right'
+    'left left left right';
 }
 
 .left {
-
+    grid-area: left;
 }
 
 .right {
-
+    grid-area: right;
 }
