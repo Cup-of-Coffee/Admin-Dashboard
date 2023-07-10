@@ -5,22 +5,46 @@ body {
 
 .container {
     display: grid;
-    grid-template-areas: 'left top top top top'
-    'left bottom bottom bottom bottom';
+    grid-template-areas: 'sidebar header header header header'
+    'sidebar content content content content';
     gap: 10px;
 }
 
 .sidebar {
-    grid-area: left;
+    grid-area: sidebar;
     background-color: pink;
 }
 
 .header {
+    grid-area: header;
+    background-color: lightblue;
+
+    display: grid;
+    grid-template-areas: 'top'
+    'bottom';
+}
+
+.top {
     grid-area: top;
-    background-color: pink;
+}
+
+.bottom {
+    grid-area: bottom;
 }
 
 .content {
-    grid-area: bottom;
-    background-color: pink;
+    grid-area: content;
+    background-color: greenyellow;
+
+    display: grid;
+    grid-template-areas: 'left right'
+    'left right';
+}
+
+.left {
+
+}
+
+.right {
+
 }
