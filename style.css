@@ -31,6 +31,22 @@ ul {
     background-color: #ffffff;
 }
 
+.updateholder {
+
+}
+
+.update {
+
+}
+
+.peopleholder {
+    
+}
+
+.people {
+
+}
+
 /* 
 ===GRID ELEMENTS===
 */
@@ -95,4 +111,14 @@ Main Content grid.
 
 .right {
     grid-area: right;
+}
+
+.updateholder {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+.peopleholder {
+
 }
