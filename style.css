@@ -24,7 +24,7 @@ ul {
 }
 
 .content {
-    
+
 }
 
 .main { 
@@ -41,7 +41,6 @@ ul {
 
 .cardholder {
     height: 90%;
-    margin: 10px;
 }
 
 .card {
@@ -50,7 +49,6 @@ ul {
 
 .updateholder {
     height: 100%;
-    margin: 10px;
 }
 
 .update {
@@ -71,9 +69,8 @@ ul {
 
 .container {
     display: grid;
-    grid-template-areas: 'sidebar header header header header'
-    'sidebar main main main main';
-    gap: 10px;
+    grid-template-areas: 'sidebar content content content content'
+    'sidebar content content content content';
 }
 
 /*
@@ -85,6 +82,13 @@ Sidebar Grid.
     display: grid;
     /* Make a grid here for nav elements */
 
+}
+
+/*
+Content Grid
+*/
+.content {
+    grid-area: content;
 }
 
 /*
