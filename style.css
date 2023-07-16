@@ -14,18 +14,34 @@ ul {
 
 .sidebar {
     background-color: lightblue;
-}
-
-.content { 
-    
+    height: 100%;
+    width: 100%;
 }
 
 .header {
     background-color: #ffffff;
+    width: 100%;
+}
+
+.content {
+    
+}
+
+.main { 
+    height: 75%;
+}
+
+.right {
+    margin: 10px;
+}
+
+.left {
+    margin: 10px;
 }
 
 .cardholder {
-    padding: 10px;
+    height: 90%;
+    margin: 10px;
 }
 
 .card {
@@ -33,7 +49,8 @@ ul {
 }
 
 .updateholder {
-
+    height: 100%;
+    margin: 10px;
 }
 
 .update {
@@ -55,7 +72,7 @@ ul {
 .container {
     display: grid;
     grid-template-areas: 'sidebar header header header header'
-    'sidebar content content content content';
+    'sidebar main main main main';
     gap: 10px;
 }
 
@@ -90,10 +107,10 @@ Header Grid.
 }
 
 /*
-Main Content grid.
+Main grid.
 */
-.content {
-    grid-area: content;
+.main {
+    grid-area: main;
 
     display: grid;
     grid-template-areas: 'left left left right'
