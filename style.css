@@ -139,18 +139,25 @@ Content Grid
     grid-template: 100% / 75% 25%;
 }
 
+.title {
+    grid-column: 1 / -1;
+}
+
 .projects {
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr 1fr;
-    grid-template-rows: repeat(auto-fit, 200px);
-    grid-template-columns: repeat(auto-fit, 200px);
+
     gap: 10px;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: max-content;
+}
+
+.news {
+
 }
 
 .updates {
-    display: grid;
-    grid-template: 100% / 50% 50%;
-    gap: 10px;
+
 }
 
 .people {
