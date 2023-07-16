@@ -15,9 +15,9 @@ ul {
 
 .sidebar {
     background-color: blue;
-    height: 100%;
-    width: 100%;
-
+    height: auto;
+    width: auto;
+    padding: 15px;
     font-size: 30px;
     font-weight: bold;
     color: #ffffff;
@@ -37,15 +37,18 @@ ul {
 
 .header {
     background-color: #ffffff;
-    width: 100%;
+    height: auto;
+    width: auto;
 }
 
 .container {
-
+    height: auto;
+    width: auto;
 }
 
 .content { 
-    height: 75%;
+    height: auto;
+    width: auto;
 }
 
 .right {
@@ -115,45 +118,34 @@ Sidebar Grid.
 Container Grid
 */
 .container {
-
-}
-
-.top {
-    grid-area: top;
-}
-
-.bottom {
-    grid-area: bottom;
+    display: grid;
+    grid-template: 30% 70%;
 }
 
 /*
-Content grid.
+Header Grid
 */
-.content {
+.header {
 
-
-    display: grid;
-    grid-template-areas: 'left left left right'
-    'left left left right';
 }
 
-.left {
-    grid-area: left;
+/*
+Content Grid
+*/
+.content {
+    display: grid;
+    grid-template: 100% / 75% 25%;
 }
 
 .cardholder {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template: 30% 30% 30% / 50% 50%;
     gap: 10px;
-}
-
-.right {
-    grid-area: right;
 }
 
 .updateholder {
     display: grid;
-    grid-template-columns: auto;
+    grid-template: 100% / 50% 50%;
     gap: 10px;
 }
 
