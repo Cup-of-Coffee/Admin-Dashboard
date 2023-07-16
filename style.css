@@ -86,15 +86,14 @@ ul {
 
 body {
     display: grid;
-    grid-template-areas: 'sidebar content content content content'
-    'sidebar content content content content';
+    grid-template: 100% / 20% 80%;
 }
 
 /*
 Header Grid.
 */
 .header {
-    grid-area: header;
+
 
     display: grid;
     grid-template-areas: 'top'
@@ -105,7 +104,7 @@ Header Grid.
 Sidebar Grid.
 */
 .sidebar {
-    grid-area: sidebar;
+
 
     display: grid;
     grid-template-rows: 10% 30% 60%;
@@ -116,7 +115,7 @@ Sidebar Grid.
 Container Grid
 */
 .container {
-    grid-area: content;
+
 }
 
 .top {
@@ -131,7 +130,7 @@ Container Grid
 Content grid.
 */
 .content {
-    grid-area: content;
+
 
     display: grid;
     grid-template-areas: 'left left left right'
