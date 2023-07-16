@@ -19,7 +19,20 @@ ul {
     width: 100%;
 
     font-size: 30px;
+    font-weight: bold;
     color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 35px;
+}
+
+.logo img {
+    height: 50%;
+    filter: invert(1);
 }
 
 .header {
@@ -27,11 +40,11 @@ ul {
     width: 100%;
 }
 
-.content {
+.container {
 
 }
 
-.main { 
+.content { 
     height: 75%;
 }
 
@@ -71,28 +84,10 @@ ul {
 ===GRID ELEMENTS===
 */
 
-.container {
+body {
     display: grid;
     grid-template-areas: 'sidebar content content content content'
     'sidebar content content content content';
-}
-
-/*
-Sidebar Grid.
-*/
-.sidebar {
-    grid-area: sidebar;
-
-    display: grid;
-    grid-template-rows: auto auto auto;
-
-}
-
-/*
-Content Grid
-*/
-.content {
-    grid-area: content;
 }
 
 /*
@@ -106,6 +101,24 @@ Header Grid.
     'bottom';
 }
 
+/*
+Sidebar Grid.
+*/
+.sidebar {
+    grid-area: sidebar;
+
+    display: grid;
+    grid-template-rows: 10% 30% 60%;
+
+}
+
+/*
+Container Grid
+*/
+.container {
+    grid-area: content;
+}
+
 .top {
     grid-area: top;
 }
@@ -115,10 +128,10 @@ Header Grid.
 }
 
 /*
-Main grid.
+Content grid.
 */
-.main {
-    grid-area: main;
+.content {
+    grid-area: content;
 
     display: grid;
     grid-template-areas: 'left left left right'
