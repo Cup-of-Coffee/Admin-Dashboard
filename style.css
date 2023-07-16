@@ -62,7 +62,7 @@ ul {
 }
 
 .projects {
-
+    padding: 10px;
 }
 
 .project {
@@ -70,7 +70,7 @@ ul {
 }
 
 .updates {
-    height: 95%;
+
 }
 
 .update {
@@ -141,7 +141,9 @@ Content Grid
 
 .projects {
     display: grid;
-    grid-template: 30% 30% 30% / 50% 50%;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(auto-fit, 200px);
     gap: 10px;
 }
 
