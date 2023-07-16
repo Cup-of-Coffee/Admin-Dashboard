@@ -5,6 +5,7 @@
 body {
     margin: auto;
     background-color: lightgray;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 ul {
@@ -13,9 +14,12 @@ ul {
 }
 
 .sidebar {
-    background-color: lightblue;
+    background-color: blue;
     height: 100%;
     width: 100%;
+
+    font-size: 30px;
+    color: #ffffff;
 }
 
 .header {
@@ -40,7 +44,7 @@ ul {
 }
 
 .cardholder {
-    height: 90%;
+    height: 95%;
 }
 
 .card {
@@ -48,7 +52,7 @@ ul {
 }
 
 .updateholder {
-    height: 100%;
+    height: 95%;
 }
 
 .update {
@@ -80,7 +84,7 @@ Sidebar Grid.
     grid-area: sidebar;
 
     display: grid;
-    /* Make a grid here for nav elements */
+    grid-template-rows: auto auto auto;
 
 }
 
