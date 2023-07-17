@@ -76,16 +76,13 @@ main {
 }
 
 .projects {
-    grid-column: 1/3;
+    padding: 10px;
+
+    grid-row: 1 / span 2;
     display: grid;
     gap: 10px;
-
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: max-content;
-}
-
-.projects {
-    padding: 10px;
 }
 
 .project {
@@ -93,18 +90,18 @@ main {
 }
 
 .annoucements {
-
+    grid-column: 2;
 }
 
 .annoucement {
 
 }
 
-.people {
-    
+.trends {
+
 }
 
-.person {
+.trend {
 
 }
 
