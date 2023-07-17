@@ -68,7 +68,7 @@ header img {
 
 main {
     display: grid;
-    grid-template: 100% / 75% 25%;
+    grid-template: 1fr 1fr / 2fr 1fr;
 }
 
 .title {
@@ -76,36 +76,12 @@ main {
 }
 
 .projects {
+    grid-column: 1/3;
     display: grid;
-
     gap: 10px;
 
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: max-content;
-}
-
-.news {
-
-}
-
-.updates {
-
-}
-
-.people {
-
-}
-
-main { 
-
-}
-
-.right {
-    margin: 10px;
-}
-
-.left {
-    margin: 10px;
 }
 
 .projects {
@@ -116,11 +92,11 @@ main {
     background-color: #ffffff;
 }
 
-.updates {
+.annoucements {
 
 }
 
-.update {
+.annoucement {
 
 }
 
