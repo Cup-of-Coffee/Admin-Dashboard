@@ -65,6 +65,46 @@ header {
     grid-template: 1fr 1fr / 2fr 1fr;
     align-items: center;
     justify-items: stretch;
+    
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+    justify-items: right;
+}
+
+.search a {
+    padding-right: 10px;
+}
+
+.searchbar {
+    width: 100%;
+    overflow: hidden;
+    border: 0px;
+    background-color: #E2E8F0;
+    border-radius: 25px;
+}
+
+.notification {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+}
+
+.notification .right {
+    display: grid;
+    justify-items: right;
+}
+
+.notification .center {
+    display: grid;
+    justify-items: center;
+}
+
+.notification .left {
+    display: grid;
+    justify-items: left;
 }
 
 header img {
