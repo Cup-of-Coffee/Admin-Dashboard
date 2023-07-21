@@ -175,6 +175,10 @@ main {
     border-left: #F0B429;
 }
 
+.buttons button {
+    height: 50px;
+}
+
 .annoucements {
     
 }
