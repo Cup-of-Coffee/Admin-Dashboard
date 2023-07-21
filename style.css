@@ -93,28 +93,16 @@ header {
 }
 
 .notification {
+    padding-right: 50px;
+    padding-left: 50px;
+
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
     align-items: center;
 }
 
 .notification img {
     width: 25px;
-}
-
-.notification .right {
-    display: grid;
-    justify-items: right;
-}
-
-.notification .center {
-    display: grid;
-    justify-items: center;
-}
-
-.notification .left {
-    display: grid;
-    justify-items: left;
 }
 
 .welcome {
@@ -175,6 +163,12 @@ main {
     border-left: #F0B429;
 }
 
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 0.2fr;
+    justify-items: right;
+}
+
 .buttons button {
     width: 35px;
     background-color: #ffffff00;
@@ -186,7 +180,7 @@ main {
 }
 
 .annoucement {
-
+    background-color: #ffffff;
 }
 
 .trends {
@@ -194,7 +188,7 @@ main {
 }
 
 .trend {
-
+    background-color: #ffffff;
 }
 
 
