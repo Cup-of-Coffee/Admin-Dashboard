@@ -64,7 +64,7 @@ header {
     box-shadow: 0px 6px 10px #bcbcbc;
 
     display: grid;
-    grid-template: 1fr 1fr / 3fr 2fr;
+    grid-template: 1fr 1fr / 4fr 2fr;
     align-items: center;
     justify-items: stretch;
     
@@ -94,11 +94,12 @@ header {
 
 .notification {
     padding-right: 50px;
-    padding-left: 50px;
+    padding-left: 230px;
 
     display: grid;
-    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    grid-template-columns: 0.2fr 0.2fr 1fr;
     align-items: center;
+    justify-items: left;
 }
 
 .notification img {
@@ -128,10 +129,19 @@ header {
     justify-items: center;
 }
 
+.actions {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    display: grid;
+    grid-template-columns: 0.2fr 0.3fr 0.2fr;
+    gap: 30px;
+    justify-items: center;
+}
+
 .actions button {
     color: #ffffff;
     border: 0;
-    height: 40px;
     width: 120px;
     border-radius: 25px;
     background-color: #1992D4;
