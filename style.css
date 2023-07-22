@@ -9,6 +9,14 @@ body {
     grid-template: 1fr 6fr / 1fr 6fr;
 }
 
+h4 {
+    margin-bottom: 0px;
+}
+
+hr {
+    border-top: 1px solid #E2E8F0;
+}
+
 /*  Aside Styling   */
 
 aside {
@@ -169,6 +177,7 @@ main {
 }
 
 .project {
+    border-radius: 25px;
     background-color: #ffffff;
     border-left: #F0B429;
 }
@@ -186,15 +195,25 @@ main {
 }
 
 .annoucements {
-    
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: max-content;
 }
 
 .annoucement {
-    background-color: #ffffff;
+    padding: 25px;
+    background-color: #ffffff;;
+    border-radius: 25px;
 }
 
 .trends {
+    padding: 10px;
 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: max-content;
 }
 
 .trend {
