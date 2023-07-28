@@ -177,9 +177,12 @@ main {
 }
 
 .project {
-    border-radius: 25px;
+    padding: 15px;
+    border-radius: 10px;
     background-color: #ffffff;
     border-left: #F0B429;
+    border-left-width: 10px;
+    border-left-style: solid;
 }
 
 .buttons {
