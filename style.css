@@ -220,7 +220,17 @@ main {
 }
 
 .trend {
-    background-color: #ffffff;
+    padding: 25px;
+    background-color: #ffffff;;
+    border-radius: 25px;
 }
 
+.userframe {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+}
 
+.user {
+    height: 65px;
+}
